@@ -23,10 +23,13 @@ console.log(apps[0]);
 
 // EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.
 const sumInstalls = apps.reduce((soma, atual)=>soma+atual.installs,0);
-console.log(sumInstalls);
+//console.log(sumInstalls);
 
 
 // EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4) 
+const scoreGreaterThan4 = apps.filter(app=>app.score > 4);
+ console.log(scoreGreaterThan4);
+ 
 
 
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
